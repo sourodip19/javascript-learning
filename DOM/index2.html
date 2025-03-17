@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="body">
+   <!-- <div class="parent1">
+   <div class="day">Monday</div>
+   <div class="day">Tuesday</div>
+   <div class="day">Wednesday</div>
+   <div class="day">Thursday</div>
+   <div class="day">Friday</div>
+   </div> -->
+</body>
+<script>
+    var parent1 = document.querySelector(".parent");
+    // console.log(parent1);
+    // console.log(parent1.children)
+    // console.log(parent1.children[0])
+    // console.log(parent1.children[0])
+    // for (let index = 0; index < parent1.children.length; index++) {
+    //     console.log(parent1.children[index].innerHTML)
+    // }
+    // parent1.children[0].style.color = "orange"
+    // parent1.children[1].style.backgroundColor = "yellow"
+    // parent1.children[1].style.color = "orange"
+    // parent1.children[1].style.borderRadius = "5%"
+    // console.log(parent1.firstElementChild)
+
+    // console.log("Nodes: ",parent1.childNodes)
+
+    const div1 = document.createElement('div')
+    console.log('div1')
+    div1.className = "container"
+    div1.id = "parent2"
+    div1.setAttribute("title","title1")
+    div1.style.backgroundColor = "green"
+    div1.style.color = "purple"
+    div1.style.padding = "30px"
+    const addtext1 = document.createTextNode("Yokoso watashi no soul society")
+    div1.appendChild(addtext1)
+    div1.innerText = "hado 99"
+    document.body.appendChild(div1)
+    console.log(div1)
+</script>
+</html>
